@@ -2,8 +2,9 @@
   "name": "@ramonornela/angular2-text-mask",
   "version": "0.0.3",
   "description": "Angular 2 directive for input text masking",
-  "main": "dist/angular2TextMask.js",
-  "typings": "./dist/es5/angular2TextMask.d.ts",
+  "main": "es5/angular2TextMask.js",
+  "typings": "es5/angular2TextMask.d.ts",
+  "module": "es2015/angular2TextMask.js",
   "author": "M.K. Safi <msafi@msafi.com>",
   "license": "MIT",
   "bugs": {
@@ -14,9 +15,10 @@
     "url": "https://github.com/text-mask/text-mask.git"
   },
   "scripts": {
-    "clean": "rimraf ./dist/es5",
+    "clean": "rimraf ./dist/es5 && rimraf ./dist/es2015",
+    "build:es2015": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig-es2015.json",
     "build:cjs": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig.json",
-    "build": "npm run clean && npm run build:cjs",
+    "build": "npm run clean && npm run build:cjs && npm run build:es2015",
     "publishPackage": "npm run build && cd dist && npm publish --access public"
   },
   "dependencies": {

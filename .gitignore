@@ -2,5 +2,6 @@ node_modules
 stats.json
 .idea
 dist/es5
+dist/es2015
 *ngfactory.ts
 npm-debug.log
