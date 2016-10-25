@@ -1,2 +1,2 @@
-*ngfactory.ts
-*.metadata.json
+es5/*ngfactory.ts
+es5/*.metadata.json
