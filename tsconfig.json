@@ -8,6 +8,7 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
+    "declaration": true,
     "outDir": "dist/es5",
     "lib": [
      "es2015",
