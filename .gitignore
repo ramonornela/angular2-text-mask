@@ -3,3 +3,4 @@ stats.json
 .idea
 dist/es5
 *ngfactory.ts
+npm-debug.log
