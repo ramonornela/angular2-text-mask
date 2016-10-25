@@ -1,4 +1,5 @@
 node_modules
 stats.json
 .idea
-dist/
+dist/es5
+*ngfactory.ts

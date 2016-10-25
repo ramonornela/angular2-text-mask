@@ -7,13 +7,15 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "outDir": "dist/es5",
+    "lib": [
+     "es2015",
+      "dom"
+    ]
   },
-  "files": [
-    "src/**/*.ts",
-    "example/**/*.ts",
-    "typings/index.d.ts",
-    "../core/**/*.ts"
+  "include": [
+    "src/**/*.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "resolveGlobs": true,
