@@ -16,6 +16,7 @@
   },
   "scripts": {
     "clean": "rimraf ./dist/es5 && rimraf ./dist/es2015",
+    "lint": "tslint -c ./tslint.json --project ./tsconfig-es2015.json",
     "build:es2015": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig-es2015.json",
     "build:cjs": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig.json",
     "build": "npm run clean && npm run build:cjs && npm run build:es2015",
@@ -36,7 +37,9 @@
   },
   "devDependencies": {
     "typescript": "^2.0.0",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.5.4",
+    "tslint": "3.15.1",
+    "tslint-eslint-rules": "1.5.0"
   },
   "homepage": "https://github.com/text-mask/text-mask/tree/master/angular2/#readme",
   "keywords": [
