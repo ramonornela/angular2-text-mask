@@ -17,6 +17,6 @@
     ]
   },
   "include": [
-    "src/angular2TextMask.ts"
+    "src/**/*"
   ]
 }
