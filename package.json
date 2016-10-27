@@ -46,6 +46,15 @@
     "tslint": "3.15.1",
     "tslint-eslint-rules": "1.5.0"
   },
+  "peerDependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/platform-server": "^2.0.0"
+  },
   "homepage": "https://github.com/text-mask/text-mask/tree/master/angular2/#readme",
   "keywords": [
     "angular2",
