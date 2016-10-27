@@ -1,6 +1,6 @@
 {
   "name": "@ramonornela/angular2-text-mask",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Angular 2 directive for input text masking",
   "main": "dist/umd/angular2TextMask.js",
   "typings": "dist/esm/angular2TextMask.d.ts",
