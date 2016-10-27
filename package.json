@@ -2,11 +2,16 @@
   "name": "@ramonornela/angular2-text-mask",
   "version": "0.0.9",
   "description": "Angular 2 directive for input text masking",
-  "main": "es2015/angular2TextMask.js",
-  "typings": "es2015/angular2TextMask.d.ts",
-  "module": "es2015/angular2TextMask.js",
+  "main": "dist/umd/angular2TextMask.js",
+  "typings": "dist/esm/angular2TextMask.d.ts",
+  "module": "dist/esm//angular2TextMask.js",
   "author": "M.K. Safi <msafi@msafi.com>",
   "license": "MIT",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
   "bugs": {
     "url": "https://github.com/text-mask/text-mask/issues"
   },
@@ -15,13 +20,12 @@
     "url": "https://github.com/text-mask/text-mask.git"
   },
   "scripts": {
-    "clean": "rimraf ./dist/es5 && rimraf ./dist/es2015",
-    "delete:ngc:files": "rimraf ./**/es*/*ngfactory && rimraf ./**/es*/*.metadata.json",
-    "lint": "tslint -c ./tslint.json --project ./tsconfig-es2015.json",
-    "build:es2015": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig-es2015.json",
-    "build:cjs": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig.json",
-    "build": "npm run clean && npm run build:cjs && npm run build:es2015",
-    "publishPackage": "npm run lint && npm run build && npm run delete:ngc:files && cd dist && npm publish --access public"
+    "clean": "rimraf ./dist/",
+    "lint": "tslint -c ./tslint.json --project ./tsconfig-esm.json",
+    "build:esm": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig-esm.json",
+    "build:umd": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig.json",
+    "build": "npm run clean && npm run build:umd && npm run build:esm",
+    "publishPackage": "npm run lint && npm run build && && npm publish --access public"
   },
   "dependencies": {
     "@angular/common": "2.1.0",

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "text-mask-core": "^0.16.4"
+  }
+}

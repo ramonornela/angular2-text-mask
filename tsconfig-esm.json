@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "allowSyntheticDefaultImports": true,
     "module": "es2015",
+    "target": "es5",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
@@ -9,17 +10,13 @@
     "removeComments": false,
     "noImplicitAny": false,
     "declaration": true,
-    "outDir": "dist/es2015",
+    "outDir": "dist/esm",
     "lib": [
      "es2015",
       "dom"
     ]
   },
   "include": [
-    "src/**/*.ts"
-  ],
-  "awesomeTypescriptLoaderOptions": {
-    "resolveGlobs": true,
-    "forkChecker": true
-  }
+    "src/angular2TextMask.ts"
+  ]
 }
