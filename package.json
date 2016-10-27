@@ -26,7 +26,7 @@
     "build:umd": "node --max_old_space_size=8096 ./node_modules/.bin/ngc -p tsconfig.json",
     "build": "npm run clean && npm run build:umd && npm run build:esm",
     "build:lint": "npm run lint && npm run build",
-    "package:json": "npm run ./scripts/npm/package",
+    "package:json": "node ./scripts/npm/package",
     "publishPackage": "npm run build:lint && npm run package:json --prepare && npm publish --access public && npm run package:json --restore"
   },
   "dependencies": {
