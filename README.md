@@ -1,3 +1,6 @@
+# DEPRECATED
+This package is to fix issue https://github.com/text-mask/text-mask/issues/244 was fix in https://www.npmjs.com/package/angular2-text-mask >= 2.1
+
 # Angular 2 Input Mask
 This Angular 2 Directive is also compatible with Ionic 2 `ion-input`.
 
